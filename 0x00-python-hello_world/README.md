@@ -1,6 +1,8 @@
 # 0x00. Python - Hello, World
 
-Author’s disclaimer
+### Author’s disclaimer
+
+``
 Welcome to the Python world!
 
 The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
@@ -12,7 +14,9 @@ Enjoy!
 
 - Guillaume
 Resources
-Read or watch:
+``
+
+**Read or watch:**
 
 The Python tutorial (only the first three chapters below)
 Whetting Your Appetite
