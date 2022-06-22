@@ -2,7 +2,7 @@
 
 ### Author’s disclaimer
 
-``
+```
 Welcome to the Python world!
 
 The first projects are more "C-oriented" - no tricks, no funky syntax - simple!
@@ -14,7 +14,7 @@ Enjoy!
 
 - Guillaume
 Resources
-``
+```
 
 **Read or watch:**
 
