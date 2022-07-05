@@ -1,5 +1,9 @@
-def read_file(filename=""):
-    """function to read file in python"""
+#!/usr/bin/python3
+"""Function that read a file"""
 
-    f = open(filename, encoding="utf-8")
-    f.close()
+
+def read_file(filename=""):
+    """The function scope ."""
+
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end="")
