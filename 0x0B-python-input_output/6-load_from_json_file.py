@@ -2,6 +2,7 @@
 """import json modules"""
 import json
 
+
 def load_from_json_file(filename):
     """Script to create an object from json file"""
 
