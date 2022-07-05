@@ -6,4 +6,4 @@ def write_file(filename="", text=""):
     """Script that write on a file in python."""
 
     with open(filename, encoding="utf-_") as f:
-        f.write(text)
+        return f.write(text)
