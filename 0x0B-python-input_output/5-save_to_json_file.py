@@ -10,4 +10,3 @@ json representation"""
 
     with open(filename, "w") as f:
         json.dump(my_obj, f)
-    
