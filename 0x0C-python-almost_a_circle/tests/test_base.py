@@ -39,4 +39,11 @@ class TestBase_instantiation(unittest.TestCase):
         b.id = 15
         self.assertEqual(15, b.id)
 
+    def test_nb_instances_private(self):
+        with self.assertRaises(AttributeError):
+            print(Base(12).__nb_instances)
+
+    def test_str_id(self):
+        self.assertEqual("hello", Base("hello").id)
+
     
