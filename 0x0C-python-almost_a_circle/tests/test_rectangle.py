@@ -415,6 +415,7 @@ class TestRectangle_order_of_initialization(unittest.TestCase):
             Rectangle(1, 2, "invalid x", "invalid y")
 
 
+
 class TestRectangle_area(unittest.TestCase):
     """Unittests for testing the area method of the Rectangle class."""
 
@@ -521,6 +522,7 @@ class TestRectangle_stdout(unittest.TestCase):
         r = Rectangle(5, 1, 2, 4, 7)
         with self.assertRaises(TypeError):
             r.display(1)
+
 
 class TestRectangle_update_args(unittest.TestCase):
     """Unittests for testing update args method of the Rectangle class."""
