@@ -415,7 +415,6 @@ class TestRectangle_order_of_initialization(unittest.TestCase):
             Rectangle(1, 2, "invalid x", "invalid y")
 
 
-
 class TestRectangle_area(unittest.TestCase):
     """Unittests for testing the area method of the Rectangle class."""
 
