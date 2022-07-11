@@ -9,6 +9,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+
 class TestBase_instantiation(unittest.TestCase):
     """Unittest for testing instantiation"""
 
@@ -26,7 +27,7 @@ class TestBase_instantiation(unittest.TestCase):
     def test_None_id(self):
         b1 = Base(None)
         b2 = Base(None)
-        self.assertEqual(b1.id, b2.id -1)
+        self.assertEqual(b1.id, b2.id - 1)
 
     def test_unique_id(self):
         self.assertEqual(12, Base(12).id)
@@ -528,6 +529,7 @@ class TestBase_load_from_file_csv(unittest.TestCase):
     def test_load_from_file_csv_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.load_from_file_csv([], 1)
+
 
 if __name__ == "__main__":
     unittest.main()
