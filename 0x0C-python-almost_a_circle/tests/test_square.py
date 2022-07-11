@@ -7,6 +7,7 @@ import unittest
 from models.base import Base
 from models.square import Square
 
+
 class TestSquare_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Square class."""
 
@@ -69,6 +70,7 @@ class TestSquare_instantiation(unittest.TestCase):
 
     def test_y_getter(self):
         self.assertEqual(0, Square(10).y)
+
 
 class TestSquare_size(unittest.TestCase):
     """Unittests for testing size initialization of the Square class."""
@@ -218,6 +220,7 @@ class TestSquare_x(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "x must be >= 0"):
             Square(5, -1, 0)
 
+
 class TestSquare_y(unittest.TestCase):
     """Unittests for testing initialization of Square y attribute."""
 
@@ -322,6 +325,7 @@ class TestSquare_area(unittest.TestCase):
         with self.assertRaises(TypeError):
             s.area(1)
 
+
 class TestSquare_stdout(unittest.TestCase):
     """Unittests for testing __str__ and display methods of Square class."""
 
@@ -403,6 +407,7 @@ class TestSquare_stdout(unittest.TestCase):
         s = Square(3, 4, 5, 2)
         with self.assertRaises(TypeError):
             s.display(1)
+
 
 class TestSquare_update_args(unittest.TestCase):
     """Unittests for testing update args method of the Square class."""
@@ -515,6 +520,7 @@ class TestSquare_update_args(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "x must be an integer"):
             s.update(89, 1, "invalid", "invalid")
 
+
 class TestSquare_update_kwargs(unittest.TestCase):
     """Unittests for testing update kwargs method of Square class."""
 
@@ -615,6 +621,7 @@ class TestSquare_update_kwargs(unittest.TestCase):
         s = Square(10, 10, 10, 10)
         s.update(size=5, id=89, a=1, b=54)
         self.assertEqual("[Square] (89) 10/10 - 5", str(s))
+
 
 class TestSquare_to_dictionary(unittest.TestCase):
     """Unittests for testing to_dictionary method of the Square class."""
