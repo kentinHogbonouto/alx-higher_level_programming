@@ -122,5 +122,4 @@ Also, you can have this warning message:
 moved in a future release.")                                    
 
 `cursor.execute(statement, parameters)`
-    
 You can ignore it.
